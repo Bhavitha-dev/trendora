@@ -1,0 +1,181 @@
+<html>
+        <head><title>Downloaded HTML</title></head>
+        <body>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendora | My Instagram Finds</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, sans-serif; }
+        body { background: #fbf7f8; color: #222; display: flex; justify-content: center; padding: 20px; }
+        .phone-container { width: 100%; max-width: 450px; text-align: center; }
+        .profile { margin: 20px 0; }
+        .logo { width: 80px; height: 80px; background: linear-gradient(45deg, #ff758c, #ff7eb3); border-radius: 50%; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.8rem; font-weight: bold; }
+        .category-title { text-align: left; font-size: 1rem; font-weight: bold; margin: 25px 0 12px 5px; color: #444; border-left: 4px solid #ff758c; padding-left: 8px; text-transform: uppercase; }
+        
+        /* Product Card Design */
+        .affiliate-link { background: white; border-radius: 16px; padding: 12px; margin-bottom: 15px; display: flex; align-items: center; text-decoration: none; color: #333; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+        .product-img { width: 60px; height: 60px; background: #f5f5f5; border-radius: 12px; margin-right: 15px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .reel-tag { font-size: 0.65rem; font-weight: bold; background: #f0e5e8; color: #ff758c; padding: 2px 4px; border-radius: 4px; margin-top: 2px; }
+        .link-text { text-align: left; flex-grow: 1; }
+        .link-text h3 { font-size: 0.95rem; font-weight: 600; }
+        .link-text p { font-size: 0.8rem; color: #777; margin-top: 3px; }
+        .buy-tag { background: linear-gradient(45deg, #ff758c, #ff7eb3); color: white; font-size: 0.8rem; font-weight: bold; padding: 8px 14px; border-radius: 20px; }
+        footer { margin-top: 40px; font-size: 0.8rem; color: #888; padding-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="phone-container">
+        <div class="profile">
+            <div class="logo">T</div>
+            <h1>Trendora</h1>
+            <p>✨ Click on any item to shop directly from Amazon ✨</p>
+        </div>
+
+        <!-- The smart JavaScript will automatically pour all items inside this container -->
+        <div id="product-list-container"></div>
+
+        <footer>
+            <p>© 2026 Trendora | Curated for Creators ❤️</p>
+        </footer>
+    </div>
+
+    <script>
+        // 📥 ALL YOUR PRODUCTS ACROSS ALL CATEGORIES GO HERE!
+        // You can add 5, 10, or 100 items here easily. Just change the 'category' name!
+        const myProducts = [
+            // --- FASHION PRODUCTS ---
+            {
+                category: "👗 Fashion Collection",
+                name: "Oversized Solid Black Hoodie",
+                desc: "Heavyweight structured premium cotton relaxed street drop fit.",
+                link: "https://amzn.to/4yfC00n",
+                emoji: "🖤",
+                reel: "Reel 12"
+            },
+            {
+                category: "👗 Fashion Collection",
+                name: "Cloudy Ash White Hoodie",
+                desc: "Super soft interior thermal fleece, perfect cozy winter look.",
+                link: "https://amzn.to/4vM4Tj6",
+                emoji: "🤍",
+                reel: "Reel 15"
+            },                                                                                               
+            {
+                category: "👗 Fashion Collection",
+                name: "Unisex Solid Black Balaclava Hoodie with Face Cover",
+                desc: "Super soft interior thermal fleece, perfect cozy winter look.",
+                link: "https://amzn.to/4p0qHoq",
+                emoji: "🤍",
+                reel: "Reel 19"
+            },
+          {
+                category: "👗 Fashion Collection",
+                name: "Minimalist White Sneakers",
+                desc: "Premium look retro chunky sneakers for daily college wear.",
+                link: "https://amzn.to/440THmn",
+                emoji: "👟",
+                reel: "Reel 18"
+            },
+        {   category: "👗 Fashion Collection",
+                name: "M LOOKS Women's Chunky Sneakers",
+                desc: "Shoes Bold Design, Lightweight, and Durable Grip .",
+                link: "https://amzn.to/4xSdtOt",
+                emoji: "👟",
+                reel: "Reel 14"
+     },
+     {   category: "👗 Fashion Collection",
+                name: "LUCKY STEP Women's Platform Colorful Fashion Sneakers Retro Colorblock Stylish Cute Chunky Dad Walking Shoes ",                                     
+    
+                desc: "Shoes Bold Design, Lightweight, and Durable Grip .",
+                link: "https://amzn.to/3QKet6L",
+                emoji: "👟",
+                reel: "Reel 12"
+     },
+            // --- TECH PRODUCTS ---
+            {
+                category: "⚡ Tech & Gadgets",
+                name: "RGB Sound Sync Lightbar",
+                desc: "Dynamic ambient desk setup lighting that syncs to your music.",
+                link: "https://amzn.to/3QVbTuu",
+                emoji: "💡",
+                reel: "Reel 04"
+            },
+        {
+                category: "⚡ Tech & Gadgets",
+                name: "One94Store Smart LED Strip Light 5M with App & Remote Control, Music Sync RGB Lights",
+                desc: "Dynamic ambient desk setup lighting that syncs to your music.",
+                link: "https://amzn.to/4wiqEGT",
+                emoji: "💡",
+                reel: "Reel 08"
+            },
+           {
+                category: "⚡ Tech & Gadgets",
+                name: "RGB Sound Sync Lightbar",
+                desc: "Pixel Sync Smart RGBIC PC Backlight for Monitors.",
+                link: "https://amzn.to/4wc2QVc",
+                emoji: "💡",
+                reel: "Reel 09"
+         },
+            // --- BEAUTY PRODUCTS ---
+            {
+                category: "💄 Beauty & Glow",
+                name: "Hydrating Matte Lip Tint",
+                desc: "Long-lasting waterproof natural everyday lip wear shade.",
+                link: "https://amzn.to/4faUbfQ",
+                emoji: "💋",
+                reel: "Reel 22"
+            },
+               {
+                category: "💄 Beauty & Glow",
+                name: "Hydrating Matte Lip Tint",
+                desc: "LAMIOR Blurry Fudgy Matte Lip TintLong-lasting waterproof natural everyday lip wear shade.",
+                link: "https://amzn.to/4wpIpUZ",
+                emoji: "💋",
+                reel: "Reel 21"
+            },
+            {
+                category: "💄 Beauty & Glow",
+                name: "Hydrating Matte Lip Tint",
+                desc: "Gege Bear Tender Lip Glaze – Velvet Matte Lip Tint .",
+                link: "https://amzn.to/3QUemFJ",
+                emoji: "💋",
+                reel: "Reel 27"
+            },
+        ];
+
+        // This smart loop automatically groups items by category and builds your page!
+        const container = document.getElementById('product-list-container');
+        let currentCategory = "";
+
+        myProducts.forEach(product => {
+            // If it's a new category, automatically print the category heading first
+            if (product.category !== currentCategory) {
+                currentCategory = product.category;
+                container.innerHTML += `<div class="category-title">${currentCategory}</div>`;
+            }
+
+            // Then print the product card
+            const cardHTML = `
+                <a href="${product.link}" target="_blank" class="affiliate-link">
+                    <div class="product-img">
+                        <span>${product.emoji}</span>
+                        <span class="reel-tag">${product.reel}</span>
+                    </div>
+                    <div class="link-text">
+                        <h3>${product.name}</h3>
+                        <p>${product.desc}</p>
+                    </div>
+                    <div class="buy-tag">Shop</div>
+                </a>
+            `;
+            container.innerHTML += cardHTML;
+        });
+    </script>
+</body>
+</html></pre>
+        </body>
+    </html>
